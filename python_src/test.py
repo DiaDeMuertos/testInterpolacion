@@ -14,6 +14,7 @@ from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from qgis.core import *
 from qgis.gui import *
+import time
 
 qgisPath = r"/usr"
 raiz = os.path.join(os.path.dirname(__file__),"capas")
@@ -39,6 +40,8 @@ def buscarNumeroDePuntos(cadena):
 if __name__ == '__main__':
     print "inicio"
     
+    time.sleep(10)
+
     ogr2ogrInstruccion = [
                 "ogr2ogr",
                 "-f",
