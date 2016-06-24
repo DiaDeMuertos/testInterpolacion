@@ -78,7 +78,7 @@ if __name__ == '__main__':
     Processing.initialize()
     import processing
 
-    processing.runalg("grass7:v.surf.idw",os.path.join(raiz,"procesos/estaciones_24hr.shp"),numeroDePuntos,2,"precipitac",False,"358437.822632,800904.643622,1586906.09172,2082253.19389",2000,-1.000000,0.000100,os.path.join(raiz,"procesos/interpolacion_24hr.tif"))        
+    processing.runalg("grass:v.surf.idw",os.path.join(raiz,"procesos/estaciones_24hr.shp"),numeroDePuntos,2,"precipitac",False,"358437.822632,800904.643622,1586906.09172,2082253.19389",2000,-1.000000,0.000100,os.path.join(raiz,"procesos/interpolacion_24hr.tif"))        
     app.exitQgis()
     app.exit()
 
